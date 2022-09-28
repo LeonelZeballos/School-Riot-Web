@@ -1,0 +1,199 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    background-image: url(https://giphy.com/clips/spellbreak-QyzfCel9nSNOa6GVl9);
+}
+
+ul {
+    list-style: none;
+}
+
+.nav_bar {
+    position: relative;
+    height: 80px;
+}
+
+#nav_bar-ul {    
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+.nav_option {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+ul li a {
+    font-size: 1.2em;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    transition: text-shadow ease .3s;
+}
+
+.tittle {
+    margin: 0;
+    width: 20%;
+    position: absolute;
+    left: 100px;
+    color: white;
+}
+
+a:hover {
+    text-shadow: 0px 0px 15px #FFFFFF;
+}
+
+.tittle {
+    margin-top: 20px;
+}
+
+.tittle a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    transition: text-shadow ease .3s;
+}
+
+.nav_bar img {
+    position: absolute;
+    width: 90px;
+    left: 10px;
+    bottom: -5px;
+    transition: transform ease .3s;
+}
+
+.nav_bar img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#info {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info-box {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+}
+
+.descripcion {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px;
+    display: block;
+    font-size: 1.2em;
+    border-radius: 40px;
+    position: relative;
+    bottom: -50px;
+    margin: 0 auto;
+    color: black;
+    font-weight: 900;
+    background-color: #80ed99;
+    transition: transform ease .3s;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+video {
+    position: fixed;
+}
+
+#creditos {
+    position: relative;
+    font-size: .8rem;
+    opacity: .5;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+    .descripcion {
+        font-size: .9rem;
+        position: relative;
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tittle {
+        width: 100%;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .tittle a {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .descripcion {
+        font-size: .75rem;
+    }
+
+    .info-box {
+        width: 60%;
+    }
+
+    ul {
+        visibility: hidden;
+        display: none;
+    }
+
+    .nav_bar img {
+        width: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav_bar img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .tittle {
+        position: relative;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .tittle a {
+        position: fixed;
+    }
+
+    .info-box {
+        width: 70%;
+    }
+}
